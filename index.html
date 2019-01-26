@@ -57,19 +57,21 @@
       </div>
      
     </header>
-   <!--JS Practise-->
-    <div class="jspract ">
+
+   <!--My JS Practise-->
+
+    <div class="jspract">
       <div class="container-fluid my-auto">
         <div class="row">
           <div class="col-lg-12">
             <h1 class="text-uppercase text-center">
-              JavaScript practise!
+              JavaScript practice!
             </h1> 
           </div>
         </div>
 
         <div class="row">
-          <div class="image col-md-4 col-sm-4">
+          <div class="image col-md-4 col-sm-4 px-sm-1">
             <img src="js_logo.png" class="img-responsive center-block">              
           </div>
           <div class="description col-md-8 col-sm-8">
@@ -78,25 +80,67 @@
               Также параллельно мы будем применять Bootstrap 4. По ходу наполнения всего сайта также будем применять полученные знания по HTML5, CSS3. 
             </p>
             <div class="row">
-              <div class="links text-center col-md-12 col-sm-12">
+              <div class="links text-center col-sm-12">
                 <h3>
                   Ссылки на изучаемый материал
                 </h3>
               </div>
-              <div class="link1 col-md-4 col-sm-4">
+              <div class="link1 col-sm-4 my-1 mx-auto">
                 <a href="http://learn.javascript.ru" target="_blank">JavaScript</a>                      
               </div>
-              <div class="link2 col-md-4 col-sm-4">
+              <div class="link2 col-sm-4 my-1 mx-auto">
                 <a href="http://getbootstrap.com" target="_blank">Bootstrap4</a>                      
               </div>
-              <div class="link3 col-md-4 col-sm-4">
-                <a href="http://w3school.com" target="_blank">HTML/CSS</a>                      
+              <div class="link3 col-sm-4 my-1 mx-auto">
+                <a href="http://w3school.com" target="_blank">HTML/CSS</a>       <!--нужно подправить align при xs-->
+                              <!--исправил! добавил отступы margin and padding in Bootstrap 4-->            
               </div>
             </div>
           </div>  
         </div> 
       </div>  
     </div>
+    <!--Very first JS example!-->
+    <!--<script>
+      alert( 'Я - JavaScript!' );
+    </script> вывел в отдельный js файл-->
+
+    <script type="text/javascript" defer="" src="alert.js"></script>
+
+                                <!--Добавил таблицу HTML, не знаю где вообще пригодится таблица при разработке реального сайта, но пусть здесь она будет...-->
+    <section class="glossary">
+      <div class="container">
+        <div class="row">
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Синхронный</td>
+              <td>Браузер загружает страницу постепенно. Важно! Если скрипт-внешний, то пока браузер не выполнит его, он не покажет остальную часть страницы</td>
+            </tr>
+            <tr>  
+              <td>2</td>
+              <td>async</td>
+              <td>Скрипт выполняется полностью асинхронно с остальной веб-страницей. То есть, при обнаружении <b>script async src="..."</b> браузер не останавливает обработку страницы, а спокойно работает дальше. Когда скрипт будет загружен – он выполнится.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>defer</td>
+              <td>Скрипт также выполняется асинхронно, не заставляет ждать страницу, но есть два отличия от async. 1 -браузер гарантирует, что относительный порядок скриптов с defer будет сохранён. 2 - скрипт с defer сработает, когда весь HTML-документ будет обработан браузером.</td>
+            </tr>
+          </table>  
+        </div>
+      </div>
+    </section>  
+
+
+
+
+
   </body>
 
 </html>

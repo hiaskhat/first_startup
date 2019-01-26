@@ -60,6 +60,7 @@ header.startup h1 {
 .jspract {
   height: auto;  
   background-color: #e6e6ff;
+  padding-bottom: 30px;
 }
 
 .jspract h1 {
@@ -81,6 +82,25 @@ header.startup h1 {
 }
 
 .jspract .links {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 30px 0;
   color: #133a2d;
+}
+
+.jspract a {
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 13px;
+  
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+}
+
+.jspract a:hover {
+  background-color: blue;
+}
+
+.glossary table {
+  margin: 30px 0 30px 0;
 }
